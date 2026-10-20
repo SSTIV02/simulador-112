@@ -14,3 +14,9 @@ Por qué el .html no abre en iPhone: iOS no ejecuta archivos HTML locales desde 
 - El progreso guardado en el navegador NO se comparte entre Safari, la app instalada y el computador. Usa el botón **Guardar** de la app para exportar y respaldar.
 - Para actualizar: sube el nuevo index.html y cambia `VERSION` en sw.js (por ejemplo `sim112-v11-2`), si no, el iPhone seguirá mostrando la versión guardada.
 - No pude probar en un iPhone real ni en WebKit (mi entorno solo tiene Chromium). Si algo falla en Safari, envíame captura y el texto del error.
+
+## Actualización v15 (optimización para iPhone 13)
+- Sube a GitHub los DOS archivos nuevos: `index.html` y `sw.js` (reemplazan a los anteriores en el repositorio). Si solo subes uno, el iPhone seguirá mostrando la versión guardada.
+- Después, en el iPhone: abre la app, ciérrala por completo (desliza hacia arriba desde el selector de apps) y ábrela otra vez. La primera apertura descarga la versión nueva; la segunda ya la muestra.
+- Si no cambia, borra la app de la pantalla de inicio y vuelve a añadirla desde Safari (avisa antes: se pierde el progreso que no hayas guardado con el botón «Guardar»).
+- Todo lo de esta versión se probó solo en una emulación de iPhone en Chromium; no se probó en Safari real.
